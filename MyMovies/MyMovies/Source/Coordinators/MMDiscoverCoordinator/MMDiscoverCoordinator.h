@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class MMDownloadContentSession;
+
 @interface MMDiscoverCoordinator : NSObject
+
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController
+                             downloadSession:(MMDownloadContentSession *)session;
 
 @end

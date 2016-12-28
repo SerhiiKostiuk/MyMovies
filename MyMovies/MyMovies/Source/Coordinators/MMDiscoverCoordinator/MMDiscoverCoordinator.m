@@ -8,15 +8,26 @@
 @import UIKit;
 
 #import "MMDiscoverCoordinator.h"
+#import "MMDownloadContentSession.h"
 
 @interface MMDiscoverCoordinator ()
-
+@property (nonatomic, strong)   UINavigationController              *navigationController;
+@property (nonatomic, strong)  MMDownloadContentSession             *session;
 @end
 
 @implementation MMDiscoverCoordinator
 
-- (instancetype)initWithNavigationController:(UINavigationController *)navigationController downloadSession:()session {
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController
+                             downloadSession:(MMDownloadContentSession *)session
+{
+    self = [super init];
     
+    if (self) {
+        self.navigationController = navigationController;
+        self.session = session;
+    }
+    
+    return self;
 }
 
 @end

@@ -10,4 +10,8 @@
 
 @implementation MMDownloadContentSession
 
+- (void)downloadContentWithJSONString:(NSString *)JSONString {
+    
+}
+
 @end

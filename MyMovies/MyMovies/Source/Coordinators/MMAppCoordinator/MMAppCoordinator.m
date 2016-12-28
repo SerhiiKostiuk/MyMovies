@@ -7,11 +7,13 @@
 //
 
 #import "MMAppCoordinator.h"
+#import "MMDiscoverCoordinator.h"
 
 #import "UIStoryboard+KSExtensions.h"
 
 @interface MMAppCoordinator ()
 @property (nonatomic, strong)   UINavigationController      *rootNavigationController;
+@property (nonatomic, strong)   MMDiscoverCoordinator       *discoverCoordinator;
 
 
 @end
@@ -38,7 +40,7 @@
     
     UINavigationController *navigationController = [storyboard instantiateInitialViewController];
     
-    
+    self.discoverCoordinator = [MMDiscoverCoordinator alloc] in
     
 }
 
