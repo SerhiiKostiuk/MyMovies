@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75BB1E13C742008DA5DD /* AppDelegate.m */; };
+		CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BD1E13C742008DA5DD /* Assets.xcassets */; };
+		CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */; };
+		CDCD75CD1E13C742008DA5DD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75C71E13C742008DA5DD /* Info.plist */; };
+		CDCD75CE1E13C742008DA5DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75C81E13C742008DA5DD /* main.m */; };
+		CDCD75D31E13CAC1008DA5DD /* MMAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75D21E13CAC1008DA5DD /* MMAppCoordinator.m */; };
+		CDCD75D81E13CD84008DA5DD /* UIWindow+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75D71E13CD84008DA5DD /* UIWindow+KSExtensions.m */; };
+		CDCD75E61E13E511008DA5DD /* MMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75E51E13E511008DA5DD /* MMMainViewController.m */; };
+		CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75E71E13E51D008DA5DD /* MMMainViewController.storyboard */; };
+		CDCD75EF1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75EE1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m */; };
+		CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */; };
+		CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */; };
+		CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */; };
+		CDCD75FD1E13F33D008DA5DD /* MMDownloadContentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */; };
 		CDFC37921E126F6400F6E425 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37911E126F6400F6E425 /* main.m */; };
-		CDFC37951E126F6400F6E425 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37941E126F6400F6E425 /* AppDelegate.m */; };
 		CDFC37981E126F6400F6E425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37971E126F6400F6E425 /* ViewController.m */; };
-		CDFC379B1E126F6400F6E425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFC37991E126F6400F6E425 /* Main.storyboard */; };
-		CDFC379D1E126F6400F6E425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFC379C1E126F6400F6E425 /* Assets.xcassets */; };
-		CDFC37A01E126F6400F6E425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFC379E1E126F6400F6E425 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDCD75BA1E13C742008DA5DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDCD75BB1E13C742008DA5DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDCD75BD1E13C742008DA5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDCD75BF1E13C742008DA5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDCD75C71E13C742008DA5DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCD75C81E13C742008DA5DD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDCD75D11E13CAC1008DA5DD /* MMAppCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAppCoordinator.h; sourceTree = "<group>"; };
+		CDCD75D21E13CAC1008DA5DD /* MMAppCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAppCoordinator.m; sourceTree = "<group>"; };
+		CDCD75D61E13CD84008DA5DD /* UIWindow+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+KSExtensions.h"; sourceTree = "<group>"; };
+		CDCD75D71E13CD84008DA5DD /* UIWindow+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+KSExtensions.m"; sourceTree = "<group>"; };
+		CDCD75E41E13E511008DA5DD /* MMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMainViewController.h; sourceTree = "<group>"; };
+		CDCD75E51E13E511008DA5DD /* MMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMainViewController.m; sourceTree = "<group>"; };
+		CDCD75E71E13E51D008DA5DD /* MMMainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMMainViewController.storyboard; sourceTree = "<group>"; };
+		CDCD75ED1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+KSExtensions.h"; sourceTree = "<group>"; };
+		CDCD75EE1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+KSExtensions.m"; sourceTree = "<group>"; };
+		CDCD75F11E13EC07008DA5DD /* MMDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverViewController.h; sourceTree = "<group>"; };
+		CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverViewController.m; sourceTree = "<group>"; };
+		CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		CDCD75F71E13ED70008DA5DD /* MMDiscoverCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverCoordinator.h; sourceTree = "<group>"; };
+		CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverCoordinator.m; sourceTree = "<group>"; };
+		CDCD75FB1E13F33D008DA5DD /* MMDownloadContentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDownloadContentSession.h; sourceTree = "<group>"; };
+		CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDownloadContentSession.m; sourceTree = "<group>"; };
 		CDFC378D1E126F6400F6E425 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFC37911E126F6400F6E425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CDFC37931E126F6400F6E425 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CDFC37941E126F6400F6E425 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDFC37961E126F6400F6E425 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CDFC37971E126F6400F6E425 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CDFC379A1E126F6400F6E425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDFC379C1E126F6400F6E425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDFC379F1E126F6400F6E425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CDFC37A11E126F6400F6E425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +65,208 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDCD75B91E13C742008DA5DD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75BA1E13C742008DA5DD /* AppDelegate.h */,
+				CDCD75BB1E13C742008DA5DD /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CDCD75BC1E13C742008DA5DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75BD1E13C742008DA5DD /* Assets.xcassets */,
+				CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDCD75C21E13C742008DA5DD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75CF1E13C7E9008DA5DD /* Coordinators */,
+				CDCD75C31E13C742008DA5DD /* Library */,
+				CDCD75C41E13C742008DA5DD /* Models */,
+				CDCD75C51E13C742008DA5DD /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CDCD75C31E13C742008DA5DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75D41E13CD61008DA5DD /* Categories */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CDCD75C41E13C742008DA5DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75FA1E13F329008DA5DD /* MMDownloadContentSession */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDCD75C51E13C742008DA5DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75F01E13EC07008DA5DD /* MMDiscoverViewController */,
+				CDCD75DA1E13E204008DA5DD /* MMMyListViewController */,
+				CDCD75E31E13E4F5008DA5DD /* MMMainViewController */,
+				CDCD75DB1E13E204008DA5DD /* MMNewsViewController */,
+				CDCD75DC1E13E204008DA5DD /* MMSearchViewController */,
+				CDCD75DD1E13E204008DA5DD /* MMSettingsViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDCD75C61E13C742008DA5DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75C71E13C742008DA5DD /* Info.plist */,
+				CDCD75C81E13C742008DA5DD /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCD75CF1E13C7E9008DA5DD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75D01E13C7E9008DA5DD /* MMAppCoordinator */,
+				CDCD75F61E13ED53008DA5DD /* MMDiscoverCoordinator */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CDCD75D01E13C7E9008DA5DD /* MMAppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75D11E13CAC1008DA5DD /* MMAppCoordinator.h */,
+				CDCD75D21E13CAC1008DA5DD /* MMAppCoordinator.m */,
+			);
+			path = MMAppCoordinator;
+			sourceTree = "<group>";
+		};
+		CDCD75D41E13CD61008DA5DD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75EC1E13E7C9008DA5DD /* UIStoryboard */,
+				CDCD75D51E13CD61008DA5DD /* UIWindow */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CDCD75D51E13CD61008DA5DD /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75D61E13CD84008DA5DD /* UIWindow+KSExtensions.h */,
+				CDCD75D71E13CD84008DA5DD /* UIWindow+KSExtensions.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		CDCD75DA1E13E204008DA5DD /* MMMyListViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMMyListViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75DB1E13E204008DA5DD /* MMNewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMNewsViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75DC1E13E204008DA5DD /* MMSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMSearchViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75DD1E13E204008DA5DD /* MMSettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMSettingsViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75E31E13E4F5008DA5DD /* MMMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75E91E13E67D008DA5DD /* Views */,
+				CDCD75E41E13E511008DA5DD /* MMMainViewController.h */,
+				CDCD75E51E13E511008DA5DD /* MMMainViewController.m */,
+				CDCD75E71E13E51D008DA5DD /* MMMainViewController.storyboard */,
+			);
+			path = MMMainViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75E91E13E67D008DA5DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75EA1E13E67D008DA5DD /* MMBottomButtonView */,
+				CDCD75EB1E13E67D008DA5DD /* MMMainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDCD75EA1E13E67D008DA5DD /* MMBottomButtonView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMBottomButtonView;
+			sourceTree = "<group>";
+		};
+		CDCD75EB1E13E67D008DA5DD /* MMMainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMMainView;
+			sourceTree = "<group>";
+		};
+		CDCD75EC1E13E7C9008DA5DD /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75ED1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.h */,
+				CDCD75EE1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		CDCD75F01E13EC07008DA5DD /* MMDiscoverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75F11E13EC07008DA5DD /* MMDiscoverViewController.h */,
+				CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */,
+				CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */,
+			);
+			path = MMDiscoverViewController;
+			sourceTree = "<group>";
+		};
+		CDCD75F61E13ED53008DA5DD /* MMDiscoverCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75F71E13ED70008DA5DD /* MMDiscoverCoordinator.h */,
+				CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */,
+			);
+			path = MMDiscoverCoordinator;
+			sourceTree = "<group>";
+		};
+		CDCD75FA1E13F329008DA5DD /* MMDownloadContentSession */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD75FB1E13F33D008DA5DD /* MMDownloadContentSession.h */,
+				CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */,
+			);
+			path = MMDownloadContentSession;
+			sourceTree = "<group>";
+		};
 		CDFC37841E126F6400F6E425 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +286,12 @@
 		CDFC378F1E126F6400F6E425 /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
-				CDFC37931E126F6400F6E425 /* AppDelegate.h */,
-				CDFC37941E126F6400F6E425 /* AppDelegate.m */,
+				CDCD75B91E13C742008DA5DD /* AppDelegate */,
+				CDCD75BC1E13C742008DA5DD /* Resources */,
+				CDCD75C21E13C742008DA5DD /* Source */,
+				CDCD75C61E13C742008DA5DD /* Supporting Files */,
 				CDFC37961E126F6400F6E425 /* ViewController.h */,
 				CDFC37971E126F6400F6E425 /* ViewController.m */,
-				CDFC37991E126F6400F6E425 /* Main.storyboard */,
-				CDFC379C1E126F6400F6E425 /* Assets.xcassets */,
-				CDFC379E1E126F6400F6E425 /* LaunchScreen.storyboard */,
-				CDFC37A11E126F6400F6E425 /* Info.plist */,
 				CDFC37901E126F6400F6E425 /* Supporting Files */,
 			);
 			path = MyMovies;
@@ -138,9 +364,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFC37A01E126F6400F6E425 /* LaunchScreen.storyboard in Resources */,
-				CDFC379D1E126F6400F6E425 /* Assets.xcassets in Resources */,
-				CDFC379B1E126F6400F6E425 /* Main.storyboard in Resources */,
+				CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */,
+				CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */,
+				CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */,
+				CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */,
+				CDCD75CD1E13C742008DA5DD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,27 +379,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCD75CE1E13C742008DA5DD /* main.m in Sources */,
+				CDCD75D81E13CD84008DA5DD /* UIWindow+KSExtensions.m in Sources */,
+				CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */,
 				CDFC37981E126F6400F6E425 /* ViewController.m in Sources */,
-				CDFC37951E126F6400F6E425 /* AppDelegate.m in Sources */,
+				CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */,
+				CDCD75EF1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m in Sources */,
+				CDCD75D31E13CAC1008DA5DD /* MMAppCoordinator.m in Sources */,
+				CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */,
 				CDFC37921E126F6400F6E425 /* main.m in Sources */,
+				CDCD75E61E13E511008DA5DD /* MMMainViewController.m in Sources */,
+				CDCD75FD1E13F33D008DA5DD /* MMDownloadContentSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDFC37991E126F6400F6E425 /* Main.storyboard */ = {
+		CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CDFC379A1E126F6400F6E425 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CDFC379E1E126F6400F6E425 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDFC379F1E126F6400F6E425 /* Base */,
+				CDCD75BF1E13C742008DA5DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -310,6 +538,7 @@
 				CDFC37A61E126F6400F6E425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

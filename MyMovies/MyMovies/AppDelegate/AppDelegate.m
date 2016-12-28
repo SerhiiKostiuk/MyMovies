@@ -8,7 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "MMAppCoordinator.h"
+
+#import "UIWindow+KSExtensions.h"
+
+
 @interface AppDelegate ()
+@property (nonatomic, strong)   MMAppCoordinator    *appCoordinator;
 
 @end
 
@@ -16,7 +22,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIWindow *window = [UIWindow window];
+    
+    MMAppCoordinator *appCoordinator = [MMAppCoordinator new];
+    self.appCoordinator = appCoordinator;
+    
+    window.rootViewController = appCoordinator.rootNavigationController;
+    [window makeKeyAndVisible];
+    
+    self.window = window;
+    
     return YES;
 }
 
