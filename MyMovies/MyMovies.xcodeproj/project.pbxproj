@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C87FA7505BE65B68F594C82 /* Pods_MyMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5ED9108D6149EEB1490473 /* Pods_MyMovies.framework */; };
+		CD1E8E101E1516EC0080380C /* MMMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E0F1E1516EC0080380C /* MMMovieModel.m */; };
+		CD1E8E141E1535CC0080380C /* NSDictionary+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E131E1535CC0080380C /* NSDictionary+KSExtensions.m */; };
+		CD1E8E191E1550080080380C /* MMDownloadContentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E181E1550080080380C /* MMDownloadContentSession.m */; };
+		CD1E8E1D1E1553340080380C /* MMDiscoverContentDownloadSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E1C1E1553340080380C /* MMDiscoverContentDownloadSession.m */; };
+		CD1E8E1F1E1557140080380C /* MMSourceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD1E8E1E1E1557140080380C /* MMSourceConfig.plist */; };
+		CD4FED4A1E155CA8009816F8 /* MMSessionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED491E155CA8009816F8 /* MMSessionConfig.m */; };
 		CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75BB1E13C742008DA5DD /* AppDelegate.m */; };
 		CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BD1E13C742008DA5DD /* Assets.xcassets */; };
 		CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */; };
@@ -20,12 +27,23 @@
 		CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */; };
 		CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */; };
 		CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */; };
-		CDCD75FD1E13F33D008DA5DD /* MMDownloadContentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */; };
-		CDFC37921E126F6400F6E425 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37911E126F6400F6E425 /* main.m */; };
 		CDFC37981E126F6400F6E425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37971E126F6400F6E425 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5ED9108D6149EEB1490473 /* Pods_MyMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD538DF4D7A3C92B6B47D91 /* Pods-MyMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies.release.xcconfig"; sourceTree = "<group>"; };
+		CD1E8E0E1E1516EC0080380C /* MMMovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMovieModel.h; sourceTree = "<group>"; };
+		CD1E8E0F1E1516EC0080380C /* MMMovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMovieModel.m; sourceTree = "<group>"; };
+		CD1E8E121E1535CC0080380C /* NSDictionary+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KSExtensions.h"; sourceTree = "<group>"; };
+		CD1E8E131E1535CC0080380C /* NSDictionary+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KSExtensions.m"; sourceTree = "<group>"; };
+		CD1E8E171E1550080080380C /* MMDownloadContentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDownloadContentSession.h; sourceTree = "<group>"; };
+		CD1E8E181E1550080080380C /* MMDownloadContentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDownloadContentSession.m; sourceTree = "<group>"; };
+		CD1E8E1B1E1553340080380C /* MMDiscoverContentDownloadSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverContentDownloadSession.h; sourceTree = "<group>"; };
+		CD1E8E1C1E1553340080380C /* MMDiscoverContentDownloadSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverContentDownloadSession.m; sourceTree = "<group>"; };
+		CD1E8E1E1E1557140080380C /* MMSourceConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MMSourceConfig.plist; sourceTree = "<group>"; };
+		CD4FED481E155CA8009816F8 /* MMSessionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSessionConfig.h; sourceTree = "<group>"; };
+		CD4FED491E155CA8009816F8 /* MMSessionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSessionConfig.m; sourceTree = "<group>"; };
 		CDCD75BA1E13C742008DA5DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDCD75BB1E13C742008DA5DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDCD75BD1E13C742008DA5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,12 +64,11 @@
 		CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMDiscoverViewController.storyboard; sourceTree = "<group>"; };
 		CDCD75F71E13ED70008DA5DD /* MMDiscoverCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverCoordinator.h; sourceTree = "<group>"; };
 		CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverCoordinator.m; sourceTree = "<group>"; };
-		CDCD75FB1E13F33D008DA5DD /* MMDownloadContentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDownloadContentSession.h; sourceTree = "<group>"; };
-		CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDownloadContentSession.m; sourceTree = "<group>"; };
 		CDFC378D1E126F6400F6E425 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFC37911E126F6400F6E425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDFC37961E126F6400F6E425 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CDFC37971E126F6400F6E425 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF0731AEBEA5CC77A22AB546 /* Pods-MyMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +76,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C87FA7505BE65B68F594C82 /* Pods_MyMovies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203F1153FE97AC19C3FDA6E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF0731AEBEA5CC77A22AB546 /* Pods-MyMovies.debug.xcconfig */,
+				3DD538DF4D7A3C92B6B47D91 /* Pods-MyMovies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6F43B1DE2C4F9C54066C00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C5ED9108D6149EEB1490473 /* Pods_MyMovies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1E8E0D1E1516C60080380C /* MMMovieModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E8E0E1E1516EC0080380C /* MMMovieModel.h */,
+				CD1E8E0F1E1516EC0080380C /* MMMovieModel.m */,
+			);
+			path = MMMovieModel;
+			sourceTree = "<group>";
+		};
+		CD1E8E111E1535B10080380C /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E8E121E1535CC0080380C /* NSDictionary+KSExtensions.h */,
+				CD1E8E131E1535CC0080380C /* NSDictionary+KSExtensions.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		CD1E8E151E1550080080380C /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E8E1A1E1553180080380C /* MMDiscoverContentDownloadSession */,
+				CD1E8E161E1550080080380C /* MMDownloadContentSession */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		CD1E8E161E1550080080380C /* MMDownloadContentSession */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E8E171E1550080080380C /* MMDownloadContentSession.h */,
+				CD1E8E181E1550080080380C /* MMDownloadContentSession.m */,
+			);
+			path = MMDownloadContentSession;
+			sourceTree = "<group>";
+		};
+		CD1E8E1A1E1553180080380C /* MMDiscoverContentDownloadSession */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E8E1B1E1553340080380C /* MMDiscoverContentDownloadSession.h */,
+				CD1E8E1C1E1553340080380C /* MMDiscoverContentDownloadSession.m */,
+			);
+			path = MMDiscoverContentDownloadSession;
+			sourceTree = "<group>";
+		};
+		CD4FED461E155C71009816F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FED471E155C71009816F8 /* MMSessionConfig */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CD4FED471E155C71009816F8 /* MMSessionConfig */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FED481E155CA8009816F8 /* MMSessionConfig.h */,
+				CD4FED491E155CA8009816F8 /* MMSessionConfig.m */,
+			);
+			path = MMSessionConfig;
+			sourceTree = "<group>";
+		};
 		CDCD75B91E13C742008DA5DD /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +176,7 @@
 			children = (
 				CDCD75BD1E13C742008DA5DD /* Assets.xcassets */,
 				CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */,
+				CD1E8E1E1E1557140080380C /* MMSourceConfig.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -98,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCD75D41E13CD61008DA5DD /* Categories */,
+				CD4FED461E155C71009816F8 /* Utilities */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -105,7 +204,8 @@
 		CDCD75C41E13C742008DA5DD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CDCD75FA1E13F329008DA5DD /* MMDownloadContentSession */,
+				CD1E8E151E1550080080380C /* Sessions */,
+				CD1E8E0D1E1516C60080380C /* MMMovieModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +253,7 @@
 		CDCD75D41E13CD61008DA5DD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CD1E8E111E1535B10080380C /* NSDictionary */,
 				CDCD75EC1E13E7C9008DA5DD /* UIStoryboard */,
 				CDCD75D51E13CD61008DA5DD /* UIWindow */,
 			);
@@ -258,20 +359,13 @@
 			path = MMDiscoverCoordinator;
 			sourceTree = "<group>";
 		};
-		CDCD75FA1E13F329008DA5DD /* MMDownloadContentSession */ = {
-			isa = PBXGroup;
-			children = (
-				CDCD75FB1E13F33D008DA5DD /* MMDownloadContentSession.h */,
-				CDCD75FC1E13F33D008DA5DD /* MMDownloadContentSession.m */,
-			);
-			path = MMDownloadContentSession;
-			sourceTree = "<group>";
-		};
 		CDFC37841E126F6400F6E425 = {
 			isa = PBXGroup;
 			children = (
 				CDFC378F1E126F6400F6E425 /* MyMovies */,
 				CDFC378E1E126F6400F6E425 /* Products */,
+				203F1153FE97AC19C3FDA6E6 /* Pods */,
+				6A6F43B1DE2C4F9C54066C00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,9 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDFC37A41E126F6400F6E425 /* Build configuration list for PBXNativeTarget "MyMovies" */;
 			buildPhases = (
-				CDFC37891E126F6400F6E425 /* Sources */,
+				424015B1B6C96AF846FC657C /* [CP] Check Pods Manifest.lock */,
 				CDFC378A1E126F6400F6E425 /* Frameworks */,
+				CDFC37891E126F6400F6E425 /* Sources */,
 				CDFC378B1E126F6400F6E425 /* Resources */,
+				85E488C39B27F16AC8FF5B37 /* [CP] Embed Pods Frameworks */,
+				D75DA7B97993B084733C5CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */,
+				CD1E8E1F1E1557140080380C /* MMSourceConfig.plist in Resources */,
 				CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */,
 				CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */,
 				CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */,
@@ -374,22 +472,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		424015B1B6C96AF846FC657C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85E488C39B27F16AC8FF5B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75DA7B97993B084733C5CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDFC37891E126F6400F6E425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1E8E101E1516EC0080380C /* MMMovieModel.m in Sources */,
+				CD1E8E141E1535CC0080380C /* NSDictionary+KSExtensions.m in Sources */,
 				CDCD75CE1E13C742008DA5DD /* main.m in Sources */,
 				CDCD75D81E13CD84008DA5DD /* UIWindow+KSExtensions.m in Sources */,
+				CD4FED4A1E155CA8009816F8 /* MMSessionConfig.m in Sources */,
 				CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */,
 				CDFC37981E126F6400F6E425 /* ViewController.m in Sources */,
+				CD1E8E191E1550080080380C /* MMDownloadContentSession.m in Sources */,
 				CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */,
 				CDCD75EF1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m in Sources */,
+				CD1E8E1D1E1553340080380C /* MMDiscoverContentDownloadSession.m in Sources */,
 				CDCD75D31E13CAC1008DA5DD /* MMAppCoordinator.m in Sources */,
 				CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */,
-				CDFC37921E126F6400F6E425 /* main.m in Sources */,
 				CDCD75E61E13E511008DA5DD /* MMMainViewController.m in Sources */,
-				CDCD75FD1E13F33D008DA5DD /* MMDownloadContentSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +646,7 @@
 		};
 		CDFC37A51E126F6400F6E425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0731AEBEA5CC77A22AB546 /* Pods-MyMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K33J7AD8C7;
@@ -509,6 +659,7 @@
 		};
 		CDFC37A61E126F6400F6E425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD538DF4D7A3C92B6B47D91 /* Pods-MyMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K33J7AD8C7;
