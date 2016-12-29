@@ -8,13 +8,13 @@
 
 #import "MMAppCoordinator.h"
 #import "MMDiscoverCoordinator.h"
-
+#import "MMDownloadContentSession.h"
 #import "UIStoryboard+KSExtensions.h"
 
 @interface MMAppCoordinator ()
 @property (nonatomic, strong)   UINavigationController      *rootNavigationController;
 @property (nonatomic, strong)   MMDiscoverCoordinator       *discoverCoordinator;
-
+@property (nonatomic, strong)   MMDownloadContentSession    *session;
 
 @end
 
@@ -39,8 +39,9 @@
     UIStoryboard *storyboard = [UIStoryboard mainStoryboard];
     
     UINavigationController *navigationController = [storyboard instantiateInitialViewController];
+    MMDownloadContentSession *session = [MMDownloadContentSession sharedSession];
     
-    self.discoverCoordinator = [MMDiscoverCoordinator alloc] in
+    self.discoverCoordinator = [[MMDiscoverCoordinator alloc] initWithNavigationController:navigationController downloadSession:session];
     
 }
 
