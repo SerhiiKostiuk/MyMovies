@@ -15,4 +15,6 @@
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController
                              downloadSession:(MMDownloadContentSession *)session;
 
+- (UIViewController *)initialViewController;
+
 @end

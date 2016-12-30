@@ -9,10 +9,13 @@
 
 #import "MMDiscoverCoordinator.h"
 #import "MMDownloadContentSession.h"
+#import "MMDiscoverViewController.h"
 
-@interface MMDiscoverCoordinator ()
-@property (nonatomic, strong)   UINavigationController              *navigationController;
-@property (nonatomic, strong)  MMDownloadContentSession             *session;
+@interface MMDiscoverCoordinator () <MMDiscoverViewControllerDelegate>
+@property (nonatomic, strong) UINavigationController              *navigationController;
+@property (nonatomic, strong) MMDownloadContentSession            *session;
+@property (nonatomic, strong) MMDiscoverViewController            *discoverViewController;
+
 @end
 
 @implementation MMDiscoverCoordinator
@@ -28,6 +31,20 @@
     }
     
     return self;
+}
+
+#pragma mark -
+#pragma mark Public
+
+- (UIViewController *)initialViewController {
+//    FMUser *user = [self.userPersistence savedUser];
+    
+    if (nil == self.discoverViewController) {
+        self.discoverViewController = [MMDiscoverViewController new];
+        self.discoverViewController.delegate = self;
+    }
+    
+    return self.discoverViewController;
 }
 
 @end

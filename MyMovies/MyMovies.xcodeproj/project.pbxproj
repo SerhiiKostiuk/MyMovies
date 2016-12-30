@@ -17,7 +17,6 @@
 		CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75BB1E13C742008DA5DD /* AppDelegate.m */; };
 		CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BD1E13C742008DA5DD /* Assets.xcassets */; };
 		CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75BE1E13C742008DA5DD /* LaunchScreen.storyboard */; };
-		CDCD75CD1E13C742008DA5DD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75C71E13C742008DA5DD /* Info.plist */; };
 		CDCD75CE1E13C742008DA5DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75C81E13C742008DA5DD /* main.m */; };
 		CDCD75D31E13CAC1008DA5DD /* MMAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75D21E13CAC1008DA5DD /* MMAppCoordinator.m */; };
 		CDCD75D81E13CD84008DA5DD /* UIWindow+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75D71E13CD84008DA5DD /* UIWindow+KSExtensions.m */; };
@@ -28,6 +27,7 @@
 		CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */; };
 		CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */; };
 		CDFC37981E126F6400F6E425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37971E126F6400F6E425 /* ViewController.m */; };
+		CDFDF1A71E166C1800BC2DA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75C71E13C742008DA5DD /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -461,12 +461,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFDF1A71E166C1800BC2DA2 /* Info.plist in Resources */,
 				CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */,
 				CD1E8E1F1E1557140080380C /* MMSourceConfig.plist in Resources */,
 				CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */,
 				CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */,
 				CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */,
-				CDCD75CD1E13C742008DA5DD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K33J7AD8C7;
-				INFOPLIST_FILE = MyMovies/Info.plist;
+				INFOPLIST_FILE = "MyMovies/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idapgroup.MyMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,7 +663,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K33J7AD8C7;
-				INFOPLIST_FILE = MyMovies/Info.plist;
+				INFOPLIST_FILE = "MyMovies/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idapgroup.MyMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
