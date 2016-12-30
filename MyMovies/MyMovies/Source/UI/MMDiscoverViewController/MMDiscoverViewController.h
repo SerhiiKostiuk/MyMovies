@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MMDiscoverViewControllerDelegate <NSObject>
+
+@optional
+//- (void)discoverViewControllerDidPressPhotoUploadButton;
+//- (void)homeViewControllerDidPressVideoUploadButton;
+//- (void)homeViewControllerDidPressSettingsButton;
+
+@end
+
 @interface MMDiscoverViewController : UIViewController
+@property (nonatomic, weak) id<MMDiscoverViewControllerDelegate>        delegate;
 
 @end
