@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^MMDiscoverListCompletionBlock)(NSArray *dataArray, NSString *errorString);
+
 @interface MMDownloadContentSession : NSObject
 
 + (MMDownloadContentSession *)sharedSession;
+
+
 
 @end
