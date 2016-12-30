@@ -12,9 +12,12 @@
 
 //  @param dataArray   An array of `MMMovieModel` objects
 
-typedef void (^MMDiscoverListCompletionBlock)(NSArray* _Nullable dataArray, NSString* _Nullable errorString);
+typedef void (^MMDiscoverListCompletionBlock)(NSArray *dataArray, NSString *errorString);
 
 
-@interface MMDiscoverContentDownloadSession : MMDownloadContentSession
+@interface MMDiscoverContentDownloadSession : NSObject
+
+- (void)getDiscoverList:(NSString *)pageLimit completion:(MMDiscoverListCompletionBlock)completionBlock;
+
 
 @end
