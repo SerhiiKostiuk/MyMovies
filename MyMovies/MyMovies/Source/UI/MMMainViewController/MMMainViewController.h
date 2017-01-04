@@ -10,4 +10,7 @@
 
 @interface MMMainViewController : UIViewController
 
+- (void)presentChildController:(UIViewController*)childVC;
+
+
 @end
