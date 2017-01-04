@@ -31,7 +31,7 @@
 }
 
 - (void)presentChildController:(UIViewController*)childVC {
-    
+    MMMainView *mainView = self.rootView;
     //0. Remove the current Detail View Controller showed
     if(self.currentShowingVC){
         [self removeCurrentDetailViewController];
@@ -41,10 +41,10 @@
     [self addChildViewController:childVC];
     
     //2. Define the detail controller's view size
-    childVC.view.frame = self.rootView.frame;
+    childVC.view.frame = mainView.frame;
     
     //3. Add the Detail controller's view to the Container's detail view and save a reference to the detail View Controller
-    [self.rootView addSubview:childVC.view];
+    [mainView addSubview:childVC.view];
     self.currentShowingVC = childVC;
     
     //4. Complete the add flow calling the function didMoveToParentViewController
