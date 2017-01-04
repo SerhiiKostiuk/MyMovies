@@ -14,6 +14,7 @@ typedef void (^MMDiscoverListCompletionBlock)(NSArray *dataArray, NSString *erro
 
 + (MMDownloadContentSession *)sharedSession;
 
+- (void)getDiscoverListWithCompletion:(MMDiscoverListCompletionBlock)comletion;
 
 
 @end
