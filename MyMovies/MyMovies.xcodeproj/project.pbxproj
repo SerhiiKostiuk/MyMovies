@@ -26,6 +26,10 @@
 		CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */; };
 		CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */; };
 		CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */; };
+		CDDF9DE31E1D0DB800706DE1 /* MMDiscoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF9DE21E1D0DB800706DE1 /* MMDiscoverView.m */; };
+		CDDF9DE71E1D0DD700706DE1 /* MMDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF9DE51E1D0DD700706DE1 /* MMDiscoverTableViewCell.m */; };
+		CDDF9DE81E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDF9DE61E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib */; };
+		CDDF9DEB1E1D259600706DE1 /* MMMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF9DEA1E1D259600706DE1 /* MMMainView.m */; };
 		CDFC37981E126F6400F6E425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37971E126F6400F6E425 /* ViewController.m */; };
 		CDFDF1A71E166C1800BC2DA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75C71E13C742008DA5DD /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -64,8 +68,14 @@
 		CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMDiscoverViewController.storyboard; sourceTree = "<group>"; };
 		CDCD75F71E13ED70008DA5DD /* MMDiscoverCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverCoordinator.h; sourceTree = "<group>"; };
 		CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverCoordinator.m; sourceTree = "<group>"; };
+		CDDF9DE11E1D0DB800706DE1 /* MMDiscoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverView.h; sourceTree = "<group>"; };
+		CDDF9DE21E1D0DB800706DE1 /* MMDiscoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverView.m; sourceTree = "<group>"; };
+		CDDF9DE41E1D0DD700706DE1 /* MMDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		CDDF9DE51E1D0DD700706DE1 /* MMDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDiscoverTableViewCell.m; sourceTree = "<group>"; };
+		CDDF9DE61E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMDiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		CDDF9DE91E1D259600706DE1 /* MMMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMainView.h; sourceTree = "<group>"; };
+		CDDF9DEA1E1D259600706DE1 /* MMMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMainView.m; sourceTree = "<group>"; };
 		CDFC378D1E126F6400F6E425 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDFC37911E126F6400F6E425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDFC37961E126F6400F6E425 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CDFC37971E126F6400F6E425 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FF0731AEBEA5CC77A22AB546 /* Pods-MyMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies.debug.xcconfig"; sourceTree = "<group>"; };
@@ -327,6 +337,8 @@
 		CDCD75EB1E13E67D008DA5DD /* MMMainView */ = {
 			isa = PBXGroup;
 			children = (
+				CDDF9DE91E1D259600706DE1 /* MMMainView.h */,
+				CDDF9DEA1E1D259600706DE1 /* MMMainView.m */,
 			);
 			path = MMMainView;
 			sourceTree = "<group>";
@@ -343,6 +355,7 @@
 		CDCD75F01E13EC07008DA5DD /* MMDiscoverViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CDDF9DDE1E1D0DA200706DE1 /* Views */,
 				CDCD75F11E13EC07008DA5DD /* MMDiscoverViewController.h */,
 				CDCD75F21E13EC07008DA5DD /* MMDiscoverViewController.m */,
 				CDCD75F31E13EC07008DA5DD /* MMDiscoverViewController.storyboard */,
@@ -357,6 +370,34 @@
 				CDCD75F81E13ED70008DA5DD /* MMDiscoverCoordinator.m */,
 			);
 			path = MMDiscoverCoordinator;
+			sourceTree = "<group>";
+		};
+		CDDF9DDE1E1D0DA200706DE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF9DDF1E1D0DA200706DE1 /* MMDiscoverTableViewCell */,
+				CDDF9DE01E1D0DA200706DE1 /* MMDiscoverView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDDF9DDF1E1D0DA200706DE1 /* MMDiscoverTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF9DE41E1D0DD700706DE1 /* MMDiscoverTableViewCell.h */,
+				CDDF9DE51E1D0DD700706DE1 /* MMDiscoverTableViewCell.m */,
+				CDDF9DE61E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib */,
+			);
+			path = MMDiscoverTableViewCell;
+			sourceTree = "<group>";
+		};
+		CDDF9DE01E1D0DA200706DE1 /* MMDiscoverView */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF9DE11E1D0DB800706DE1 /* MMDiscoverView.h */,
+				CDDF9DE21E1D0DB800706DE1 /* MMDiscoverView.m */,
+			);
+			path = MMDiscoverView;
 			sourceTree = "<group>";
 		};
 		CDFC37841E126F6400F6E425 = {
@@ -386,17 +427,8 @@
 				CDCD75C61E13C742008DA5DD /* Supporting Files */,
 				CDFC37961E126F6400F6E425 /* ViewController.h */,
 				CDFC37971E126F6400F6E425 /* ViewController.m */,
-				CDFC37901E126F6400F6E425 /* Supporting Files */,
 			);
 			path = MyMovies;
-			sourceTree = "<group>";
-		};
-		CDFC37901E126F6400F6E425 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CDFC37911E126F6400F6E425 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +499,7 @@
 				CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */,
 				CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */,
 				CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */,
+				CDDF9DE81E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,12 +558,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDF9DE71E1D0DD700706DE1 /* MMDiscoverTableViewCell.m in Sources */,
 				CD1E8E101E1516EC0080380C /* MMMovieModel.m in Sources */,
 				CD1E8E141E1535CC0080380C /* NSDictionary+KSExtensions.m in Sources */,
 				CDCD75CE1E13C742008DA5DD /* main.m in Sources */,
 				CDCD75D81E13CD84008DA5DD /* UIWindow+KSExtensions.m in Sources */,
 				CD4FED4A1E155CA8009816F8 /* MMSessionConfig.m in Sources */,
 				CDCD75C91E13C742008DA5DD /* AppDelegate.m in Sources */,
+				CDDF9DE31E1D0DB800706DE1 /* MMDiscoverView.m in Sources */,
+				CDDF9DEB1E1D259600706DE1 /* MMMainView.m in Sources */,
 				CDFC37981E126F6400F6E425 /* ViewController.m in Sources */,
 				CD1E8E191E1550080080380C /* MMDownloadContentSession.m in Sources */,
 				CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */,

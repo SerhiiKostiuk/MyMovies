@@ -8,6 +8,9 @@
 
 #import "MMAppCoordinator.h"
 #import "MMDiscoverCoordinator.h"
+
+#import "MMMainViewController.h"
+
 #import "MMDownloadContentSession.h"
 #import "UIStoryboard+KSExtensions.h"
 
@@ -42,7 +45,15 @@
     MMDownloadContentSession *session = [MMDownloadContentSession sharedSession];
     
     self.discoverCoordinator = [[MMDiscoverCoordinator alloc] initWithNavigationController:navigationController downloadSession:session];
+    UIViewController *mainViewController = [MMMainViewController new];
     
+    UIViewController *discoverViewController = [self.discoverCoordinator initialViewController];
+    
+    [(MMMainViewController *)mainViewController presentChildController:discoverViewController];
+    
+    navigationController.viewControllers = @[mainViewController];
+    
+    self.rootNavigationController = navigationController;
 }
 
 @end
