@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class MMDownloadContentSession;
+
 @protocol MMDiscoverViewControllerDelegate <NSObject>
 
 @optional
@@ -19,5 +21,7 @@
 
 @interface MMDiscoverViewController : UIViewController
 @property (nonatomic, weak) id<MMDiscoverViewControllerDelegate>        delegate;
+
+- (instancetype)initWithSession:(MMDownloadContentSession *)session;
 
 @end

@@ -7,31 +7,61 @@
 //
 
 #import "MMDiscoverViewController.h"
+#import "MMDownloadContentSession.h"
+#import "MMDiscoverView.h"
 
 @interface MMDiscoverViewController ()
-
+@property (nonatomic, weak) MMDownloadContentSession *session;
+@property (nonatomic, strong) MMDiscoverView *rootView;
+@property (nonatomic, strong) NSMutableArray *movieModelArray;
 @end
 
 @implementation MMDiscoverViewController
 
+#pragma mark -
+#pragma mark View Controller Lifecycle
+
+- (instancetype)initWithSession:(MMDownloadContentSession *)session {
+    self = [super init];
+    
+    self.session = session;
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self requestDiscoverMoviesList];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -
+#pragma mark Accessors
+
+- (MMDiscoverView *)rootView {
+    return (MMDiscoverView *)self.view;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - 
+#pragma mark Network Request Methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)requestDiscoverMoviesList {
+    MMDiscoverListCompletionBlock completionBlock = ^(NSArray* dataArray, NSString* errorString) {
+        if (dataArray != nil) {
+            [self processData:dataArray];
+        }
+    };
+    
+    [self.session getDiscoverListWithCompletion:completionBlock];
 }
-*/
+
+- (void)processData:(NSArray *)data {
+    if(!self.movieModelArray) {
+        self.movieModelArray = [NSMutableArray array];
+    }
+    self.movieModelArray = [NSMutableArray arrayWithArray:data];
+    
+//    [self.rootView.discoverTableView reloadData];
+}
+
 
 @end
