@@ -45,7 +45,7 @@
     MMDownloadContentSession *session = [MMDownloadContentSession sharedSession];
     
     self.discoverCoordinator = [[MMDiscoverCoordinator alloc] initWithNavigationController:navigationController downloadSession:session];
-    UIViewController *mainViewController = [MMMainViewController new];
+    UIViewController *mainViewController = navigationController.topViewController;
     
     UIViewController *discoverViewController = [self.discoverCoordinator initialViewController];
     

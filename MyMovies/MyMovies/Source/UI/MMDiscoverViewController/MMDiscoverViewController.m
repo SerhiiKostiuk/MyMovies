@@ -10,6 +10,8 @@
 #import "MMDownloadContentSession.h"
 #import "MMDiscoverView.h"
 
+#import "UIStoryboard+KSExtensions.h"
+
 @interface MMDiscoverViewController ()
 @property (nonatomic, weak) MMDownloadContentSession *session;
 @property (nonatomic, strong) MMDiscoverView *rootView;
@@ -21,12 +23,18 @@
 #pragma mark -
 #pragma mark View Controller Lifecycle
 
-- (instancetype)initWithSession:(MMDownloadContentSession *)session {
-    self = [super init];
+#pragma mark -
+#pragma mark Class Methods
+
++ (instancetype)controllerWithSession:(MMDownloadContentSession *)session {
+    UIStoryboard *storyboard = [UIStoryboard discoverStoryboard];
+    NSString *identifier = NSStringFromClass([MMDiscoverViewController class]);
     
-    self.session = session;
+    MMDiscoverViewController *discoverViewController = nil;
+    discoverViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    discoverViewController.session = session;
     
-    return self;
+    return discoverViewController;
 }
 
 - (void)viewDidLoad {

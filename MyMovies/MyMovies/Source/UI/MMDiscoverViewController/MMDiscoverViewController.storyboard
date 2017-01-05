@@ -12,7 +12,7 @@
         <!--Discover View Controller-->
         <scene sceneID="bqK-5X-Zfh">
             <objects>
-                <viewController id="3xh-cY-L9n" customClass="MMDiscoverViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MMDiscoverViewController" id="3xh-cY-L9n" customClass="MMDiscoverViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CZT-mU-ZMU"/>
                         <viewControllerLayoutGuide type="bottom" id="epR-tQ-QU7"/>

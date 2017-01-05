@@ -10,5 +10,6 @@
 
 @interface MMMainView : UIView
 @property (strong, nonatomic) IBOutlet UIView *mainContainerView;
+@property (strong, nonatomic) IBOutlet UIView *buttonView;
 
 @end

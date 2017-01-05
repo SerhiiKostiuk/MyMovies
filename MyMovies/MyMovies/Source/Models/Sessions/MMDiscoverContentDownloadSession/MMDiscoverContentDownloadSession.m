@@ -30,7 +30,7 @@ static NSString * const kDiscoverUrlFormat = @"%@/discover/movie?api_key=%@&sort
         [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         
         [manager GET:[self prepareUrl] parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"JSON: %@", responseObject);
+//            NSLog(@"JSON: %@", responseObject);
             if ([responseObject isKindOfClass:[NSDictionary class]]) {
                 NSDictionary* infosDictionary = responseObject;
                 dispatch_async(dispatch_get_main_queue(), ^{

@@ -12,4 +12,6 @@
 
 + (instancetype)mainStoryboard;
 
++ (instancetype)discoverStoryboard;
+
 @end

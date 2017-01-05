@@ -40,7 +40,8 @@
 //    FMUser *user = [self.userPersistence savedUser];
     
     if (nil == self.discoverViewController) {
-        self.discoverViewController = [[MMDiscoverViewController alloc] initWithSession:self.session];
+                
+        self.discoverViewController = [MMDiscoverViewController controllerWithSession:self.session];
         self.discoverViewController.delegate = self;
     }
     

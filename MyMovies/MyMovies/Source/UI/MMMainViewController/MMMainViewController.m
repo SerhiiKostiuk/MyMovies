@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
 }
 
 #pragma mark -
@@ -36,12 +35,11 @@
     if(self.currentShowingVC){
         [self removeCurrentDetailViewController];
     }
-    
     //1. Add the detail controller as child of the container
     [self addChildViewController:childVC];
-    
+//    CGRect frame = CGRectMake(mainView.frame.origin.x, mainView.frame.origin.x, mainView.frame.size.width, mainView.frame.size.height-50);
     //2. Define the detail controller's view size
-    childVC.view.frame = mainView.frame;
+    childVC.view.frame = mainView.mainContainerView.frame;
     
     //3. Add the Detail controller's view to the Container's detail view and save a reference to the detail View Controller
     [mainView addSubview:childVC.view];
@@ -52,7 +50,7 @@
     
 }
 
-- (void)removeCurrentDetailViewController{
+- (void)removeCurrentDetailViewController {
     
     //1. Call the willMoveToParentViewController with nil
     //   This is the last method where your detailViewController can perform some operations before neing removed

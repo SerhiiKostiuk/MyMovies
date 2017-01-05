@@ -7,15 +7,21 @@
 //
 
 #import "MMMainView.h"
+#import "MMBottomButtonView.h"
+
+@interface MMMainView ()
+@property (nonatomic, strong) MMBottomButtonView *tabBarView;
+
+@end
 
 @implementation MMMainView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+     self.tabBarView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([MMBottomButtonView class]) owner:self options:nil]objectAtIndex:0];
+    
+    [self.buttonView addSubview:self.tabBarView];
 }
-*/
 
 @end

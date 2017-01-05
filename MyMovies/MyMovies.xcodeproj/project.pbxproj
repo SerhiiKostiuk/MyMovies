@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8C87FA7505BE65B68F594C82 /* Pods_MyMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5ED9108D6149EEB1490473 /* Pods_MyMovies.framework */; };
+		CD177AB61E1E8D9300B42DD9 /* MMBottomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177AB51E1E8D9300B42DD9 /* MMBottomButtonView.m */; };
+		CD177AB81E1E8DA500B42DD9 /* MMBottomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD177AB71E1E8DA500B42DD9 /* MMBottomButtonView.xib */; };
+		CD177ABB1E1E9BC300B42DD9 /* MMMyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177ABA1E1E9BC300B42DD9 /* MMMyListViewController.m */; };
+		CD177ABD1E1E9E7F00B42DD9 /* MMMyListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD177ABC1E1E9E7F00B42DD9 /* MMMyListViewController.storyboard */; };
 		CD1E8E101E1516EC0080380C /* MMMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E0F1E1516EC0080380C /* MMMovieModel.m */; };
 		CD1E8E141E1535CC0080380C /* NSDictionary+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E131E1535CC0080380C /* NSDictionary+KSExtensions.m */; };
 		CD1E8E191E1550080080380C /* MMDownloadContentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E8E181E1550080080380C /* MMDownloadContentSession.m */; };
@@ -31,12 +35,17 @@
 		CDDF9DE81E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDF9DE61E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib */; };
 		CDDF9DEB1E1D259600706DE1 /* MMMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF9DEA1E1D259600706DE1 /* MMMainView.m */; };
 		CDFC37981E126F6400F6E425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC37971E126F6400F6E425 /* ViewController.m */; };
-		CDFDF1A71E166C1800BC2DA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCD75C71E13C742008DA5DD /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C5ED9108D6149EEB1490473 /* Pods_MyMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD538DF4D7A3C92B6B47D91 /* Pods-MyMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMovies/Pods-MyMovies.release.xcconfig"; sourceTree = "<group>"; };
+		CD177AB41E1E8D9300B42DD9 /* MMBottomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBottomButtonView.h; sourceTree = "<group>"; };
+		CD177AB51E1E8D9300B42DD9 /* MMBottomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBottomButtonView.m; sourceTree = "<group>"; };
+		CD177AB71E1E8DA500B42DD9 /* MMBottomButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMBottomButtonView.xib; sourceTree = "<group>"; };
+		CD177AB91E1E9BC300B42DD9 /* MMMyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMyListViewController.h; sourceTree = "<group>"; };
+		CD177ABA1E1E9BC300B42DD9 /* MMMyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMyListViewController.m; sourceTree = "<group>"; };
+		CD177ABC1E1E9E7F00B42DD9 /* MMMyListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMMyListViewController.storyboard; sourceTree = "<group>"; };
 		CD1E8E0E1E1516EC0080380C /* MMMovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMovieModel.h; sourceTree = "<group>"; };
 		CD1E8E0F1E1516EC0080380C /* MMMovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMovieModel.m; sourceTree = "<group>"; };
 		CD1E8E121E1535CC0080380C /* NSDictionary+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KSExtensions.h"; sourceTree = "<group>"; };
@@ -282,6 +291,9 @@
 		CDCD75DA1E13E204008DA5DD /* MMMyListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CD177AB91E1E9BC300B42DD9 /* MMMyListViewController.h */,
+				CD177ABA1E1E9BC300B42DD9 /* MMMyListViewController.m */,
+				CD177ABC1E1E9E7F00B42DD9 /* MMMyListViewController.storyboard */,
 			);
 			path = MMMyListViewController;
 			sourceTree = "<group>";
@@ -330,6 +342,9 @@
 		CDCD75EA1E13E67D008DA5DD /* MMBottomButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				CD177AB41E1E8D9300B42DD9 /* MMBottomButtonView.h */,
+				CD177AB51E1E8D9300B42DD9 /* MMBottomButtonView.m */,
+				CD177AB71E1E8DA500B42DD9 /* MMBottomButtonView.xib */,
 			);
 			path = MMBottomButtonView;
 			sourceTree = "<group>";
@@ -460,7 +475,7 @@
 		CDFC37851E126F6400F6E425 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Serhii Kostiuk";
 				TargetAttributes = {
 					CDFC378C1E126F6400F6E425 = {
@@ -493,11 +508,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFDF1A71E166C1800BC2DA2 /* Info.plist in Resources */,
+				CD177ABD1E1E9E7F00B42DD9 /* MMMyListViewController.storyboard in Resources */,
 				CDCD75F51E13EC07008DA5DD /* MMDiscoverViewController.storyboard in Resources */,
 				CD1E8E1F1E1557140080380C /* MMSourceConfig.plist in Resources */,
 				CDCD75E81E13E51D008DA5DD /* MMMainViewController.storyboard in Resources */,
 				CDCD75CA1E13C742008DA5DD /* Assets.xcassets in Resources */,
+				CD177AB81E1E8DA500B42DD9 /* MMBottomButtonView.xib in Resources */,
 				CDCD75CB1E13C742008DA5DD /* LaunchScreen.storyboard in Resources */,
 				CDDF9DE81E1D0DD700706DE1 /* MMDiscoverTableViewCell.xib in Resources */,
 			);
@@ -558,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD177ABB1E1E9BC300B42DD9 /* MMMyListViewController.m in Sources */,
 				CDDF9DE71E1D0DD700706DE1 /* MMDiscoverTableViewCell.m in Sources */,
 				CD1E8E101E1516EC0080380C /* MMMovieModel.m in Sources */,
 				CD1E8E141E1535CC0080380C /* NSDictionary+KSExtensions.m in Sources */,
@@ -571,6 +588,7 @@
 				CD1E8E191E1550080080380C /* MMDownloadContentSession.m in Sources */,
 				CDCD75F41E13EC07008DA5DD /* MMDiscoverViewController.m in Sources */,
 				CDCD75EF1E13E7F4008DA5DD /* UIStoryboard+KSExtensions.m in Sources */,
+				CD177AB61E1E8D9300B42DD9 /* MMBottomButtonView.m in Sources */,
 				CD1E8E1D1E1553340080380C /* MMDiscoverContentDownloadSession.m in Sources */,
 				CDCD75D31E13CAC1008DA5DD /* MMAppCoordinator.m in Sources */,
 				CDCD75F91E13ED70008DA5DD /* MMDiscoverCoordinator.m in Sources */,
@@ -610,6 +628,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -657,6 +676,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

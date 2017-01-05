@@ -22,6 +22,6 @@
 @interface MMDiscoverViewController : UIViewController
 @property (nonatomic, weak) id<MMDiscoverViewControllerDelegate>        delegate;
 
-- (instancetype)initWithSession:(MMDownloadContentSession *)session;
++ (instancetype)controllerWithSession:(MMDownloadContentSession *)session;
 
 @end
